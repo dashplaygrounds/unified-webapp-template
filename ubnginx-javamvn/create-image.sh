@@ -3,7 +3,7 @@ docker buildx create --name multi-platform-builder
 docker buildx use multi-platform-builder
 docker buildx ls
 
-# Docker buildx command to make amd64 image
+# Docker buildx command to make image
 docker buildx build \
   --platform linux/amd64 \
   --platform linux/arm64 \
